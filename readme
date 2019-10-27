@@ -1,0 +1,18 @@
+docker build -t reservationsystem .
+
+docker image list
+
+
+-Run a container using the reservationsystem image using the following command
+docker run -p 8080:80 -d --name reservations reservationsystem
+
+
+http://localhost:8080/api/reservations/1
+
+-Examine the status of the container using the following command
+docker ps -a
+
+
+-Stop the reservations container with the following command.
+docker container stop reservations
+
